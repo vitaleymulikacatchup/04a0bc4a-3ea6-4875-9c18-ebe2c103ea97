@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f3f4f6;
+  }
+}
+
+@layer components {
+  .security-card {
+    @apply bg-white rounded-lg shadow-lg p-6 border border-bitninja-border;
+  }
+  
+  .bitninja-button {
+    @apply bg-bitninja-red hover:bg-bitninja-dark-red text-white font-medium py-3 px-6 rounded transition-colors duration-200 w-full;
+  }
+  
+  .ip-address {
+    @apply text-bitninja-red font-mono text-sm;
+  }
+  
+  .recaptcha-container {
+    @apply flex justify-center my-4;
+  }
+}
